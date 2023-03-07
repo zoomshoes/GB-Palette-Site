@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=DotGothic16');
+
+:root {
+  --darkest: #0F380F;
+  --dark: #306230;
+  --light: #8bac0f;
+  --lightest: #9bbc0f
+}
+
+/* set body params */
+body {
+  margin: 2px;
+  font-size: 22px;
+  font-family: "DotGothic16", sans-serif;
+  background-color: var(--lightest);
+  color: #306230;
+}
+
+/* img {
+  float: left;
+} */
+
+/* set h1 params */ 
+h1 {
+  font-size: 32px;
+  color: #0F380F;
+  text-align: center;
+}
+
+/* set h2 params */
+h2 {
+  font-size: 26px;
+  color: #0F380F;
+  text-align: center;
+}
+
+/* center images */
+.center {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* set link params */
+a { color: #0F380F; font-size: 22px; }
+a:visited { text-decoration: bold #0F380F; }
+a:hover { text-decoration: bold #0F380F; }
+a:focus { text-decoration: bold #0F380F; }
+
+/* side nav params */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: var(--darkest);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+ 
+li a {
+  display: block;
+  color: var(--lightest);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: var(--light);
+  color: var(--darkest);
+}
+
+li a:hover:not(.active) {
+  background-color: var(--lightest);
+  color: var(--darkest);
+}
+
+/* responsive photo gallery params */
+
+div.gallery {
+  border: 1px solid #0F380F;
+}
+
+div.gallery:hover {
+  border: 1px solid #306230;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 2px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+ 
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+ 
+ .clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ /* fs overlay */

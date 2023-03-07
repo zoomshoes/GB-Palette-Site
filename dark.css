@@ -1,0 +1,130 @@
+/* GB Pallete Colors
+darkest: #0F380F
+dark: #306230
+light: #8bac0f
+lightest: #9bbc0f
+*/
+
+/* set body params */
+
+@import url('https://fonts.googleapis.com/css?family=DotGothic16');
+
+:root {
+  --darkest: #0F380F;
+  --dark: #306230;
+  --light: #8bac0f;
+  --lightest: #9bbc0f
+}
+
+/* set body params */
+body {
+  margin: 1%;
+  font-size: 22px;
+  font-family: "DotGothic16", sans-serif;
+  background-color: var(--darkest);
+  color: var(--light);
+  margin: 2px;
+}
+
+/* set h1 params */ 
+h1 {
+  font-size: 32px;
+  color: #8bac0f;
+  text-align: center;
+}
+
+/* set h3 params */
+h2 {
+  font-size: 26px;
+  color: #8bac0f;
+  text-align: center;
+}
+
+/* set link colors */
+a { color: #9bbc0f; font-size: 22px; }
+a:visited { text-decoration: bold #9bbc0f; }
+a:hover { text-decoration: bold #9bbc0f; }
+a:focus { text-decoration: bold #9bbc0f; }
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: sticky;
+   overflow: hidden;
+   background-color: #9bbc0f;
+ }
+ 
+ li {
+   float: left;
+   border-top: 1px solid var(--dark);
+   border-left: 1px solid var(--dark);
+   border-right: 1px solid var(--dark);
+ }
+ 
+ li a {
+   display: block;
+   color: #0F380F;
+   text-align: center;
+   padding: 4px 4px;
+   text-decoration: none;
+ }
+
+ .active {
+   background-color: var(--light);
+   color: #0F380F;
+ }
+ 
+ li a:hover {
+   color: #9bbc0f;
+   background-color: #0F380F;
+ }
+
+ /* responsive photo gallery params */
+
+ div.gallery {
+  border: 1px solid #9bbc0f;
+}
+
+div.gallery:hover {
+  border: 1px solid #8bac0f;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 2px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
