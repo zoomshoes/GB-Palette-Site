@@ -9,7 +9,7 @@
 
 /* set body params */
 body {
-  margin: 2px;
+  margin: 0px;
   font-size: 22px;
   font-family: "DotGothic16", sans-serif;
   background-color: var(--lightest);
@@ -94,6 +94,31 @@ div.content {
     text-align: left;
     float: none;
   }
+}
+
+img {
+  margin-right: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@keyframes rotate {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+#a {
+  animation: rotate 2s infinite steps(8);
+}
+
+@-webkit-keyframes rotate {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
 }
 
 /* responsive photo gallery params */
