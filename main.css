@@ -16,10 +16,6 @@ body {
   color: #306230;
 }
 
-/* img {
-  float: left;
-} */
-
 /* set h1 params */ 
 h1 {
   font-size: 32px;
@@ -49,32 +45,55 @@ a:hover { text-decoration: bold #0F380F; }
 a:focus { text-decoration: bold #0F380F; }
 
 /* side nav params */
-ul {
-  list-style-type: none;
+.sidebar {
   margin: 0;
   padding: 0;
   width: 20%;
+  font-size: 20px;
   background-color: var(--darkest);
   position: fixed;
   height: 100%;
   overflow: auto;
 }
- 
-li a {
+
+.sidebar a {
   display: block;
   color: var(--lightest);
-  padding: 8px 16px;
+  padding: 8px;
   text-decoration: none;
 }
 
-li a.active {
-  background-color: var(--light);
+.sidebar a:hover:not(.active) {
+  background-color: var(--dark);
+  color: var(--light);
+}
+ 
+.sidebar a.active {
+  background-color: var(--lightest);
   color: var(--darkest);
 }
 
-li a:hover:not(.active) {
-  background-color: var(--lightest);
-  color: var(--darkest);
+div.content {
+  margin-left: 20%;
+  padding: 1px 8px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: left;
+    float: none;
+  }
 }
 
 /* responsive photo gallery params */
