@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=DotGothic16');
+
+:root {
+  --darkest: rgb(15, 56, 15);
+  --dark: #306230;
+  --light: #8bac0f;
+  --lightest: rgb(157, 189, 15);
+}
+
+body {
+  margin: 10px;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 22px;
+  color: var(--darkest);
+  background-color: var(--lightest);
+  background-image: url("/img/lcdpixels.png");
+  background-repeat: space;
+  cursor: crosshair;
+}
+
+.text {
+  background-color: var(--lightest);
+  width: max-content;
+  padding: 4px;
+  margin: 10px 0px 10px 0px;
+  border: 1px var(--darkest);
+}
+
+.text:hover {
+  transform: translateX(20px);
+  scale: 1.2;
+  transition: .2s;
+}
+
+.button-next {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: var(--lightest);
+  width: max-content;
+  padding: 4px;
+}
+
+.button-next:hover {
+  position: absolute;
+  background-color: var(--darkest);
+  color: var(--lightest);
+  width: max-content;
+  padding: 4px;
+}

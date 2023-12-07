@@ -13,13 +13,14 @@ body {
   font-size: 22px;
   font-family: "DotGothic16", sans-serif;
   background-color: var(--lightest);
-  color: #306230;
+  color: var(--dark);
+  text-shadow: 2px 2px 1px 1px var(--darkest);
 }
 
 /* set h1 params */ 
 h1 {
   font-size: 32px;
-  color: #0F380F;
+  color: var(--darkest);
   text-align: center;
 }
 
@@ -31,7 +32,7 @@ h2 {
 }
 
 /* center images */
-.center {
+.center-img {
   display:block;
   margin-left: auto;
   margin-right: auto;
@@ -39,14 +40,14 @@ h2 {
 }
 
 /* set link params */
-a { color: #0F380F; font-size: 22px; }
-a:visited { text-decoration: bold #0F380F; }
-a:hover { text-decoration: bold #0F380F; }
-a:focus { text-decoration: bold #0F380F; }
+a { color: var(--darkest); font-size: 22px; }
+a:visited { text-decoration: bold var(--darkest); }
+a:hover { text-decoration: bold var(--darkest); }
+a:focus { text-decoration: bold var(--darkest); }
 
 /* side nav params */
 .sidebar {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
   width: 20%;
   font-size: 20px;
@@ -73,20 +74,16 @@ a:focus { text-decoration: bold #0F380F; }
   color: var(--darkest);
 }
 
-div.content {
-  margin-left: 20%;
-  padding: 1px 8px;
-  height: 1000px;
-}
-
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+
+  .sidebar a {
+    float: left;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -97,9 +94,7 @@ div.content {
 }
 
 img {
-  margin-right: 4px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 4px 4px 4px 4px;
 }
 
 @keyframes rotate {
