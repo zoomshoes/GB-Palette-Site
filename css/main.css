@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=DotGothic16');
 
 :root {
-  --darkest: #0F380F;
-  --dark: #306230;
-  --light: #8bac0f;
-  --lightest: #9bbc0f
+  --darkest: #071821;
+  --dark: #306850;
+  --light: #86c06c;
+  --lightest: #e0f8cf;
 }
 
 /* set body params */
@@ -40,10 +40,21 @@ h2 {
 }
 
 /* set link params */
-a { color: var(--darkest); font-size: 22px; }
-a:visited { text-decoration: bold var(--darkest); }
-a:hover { text-decoration: bold var(--darkest); }
-a:focus { text-decoration: bold var(--darkest); }
+a {
+  color: var(--darkest); font-size: 22px;
+}
+
+a:visited {
+  text-decoration: bold var(--darkest);
+}
+
+a:hover {
+  text-decoration: bold var(--darkest);
+}
+
+a:focus {
+  text-decoration: bold var(--darkest);
+}
 
 /* side nav params */
 .sidebar {
