@@ -43,8 +43,8 @@ body {
 /* HEADERS AND ETC */
 
 hr {
-  margin: 0 30% 0 30%;
-  border-top: 6px dashed var(--darkest);
+  margin: 0 12.5% 0 12.5%;
+  border-top: 6px dotted var(--darkest);
   border-bottom: none;
 }
 
@@ -65,26 +65,28 @@ h3 {
 /* LINKS */
 
 a {
-  color: var(--darkest); font-size: 22px;
+  text-decoration: bold var(--darkest);
+  color: var(--dark);
+  text-decoration: underline var(--dark);
+  font-size: 22px;
   font-weight: 700;
 }
 
 a:visited {
-  text-decoration: bold var(--darkest);
+  text-shadow: 2px 2px var(--darkest);
 }
 
 a:hover {
-  text-decoration: bold var(--darkest);
+  text-shadow: 2px 2px var(--darkest);
 }
 
 a:focus {
-  text-decoration: bold var(--darkest);
+  text-shadow: 2px 2px var(--darkest);
 }
 
 /* NAVIGATION */
 
 ul {
-  /* list-style-type: none; */
   padding: 0;
   overflow: hidden;
   background-color: var(--darkest);
@@ -119,7 +121,8 @@ li a:hover:not(.active) {
 .active {
   background-color: var(--light);
   color: var(--lightest);
-  transform: scale(110%);
+  transform: scale(105%);
+  text-shadow: 2px 2px var(--darkest);
 }
 
 /* INLINE IMAGES */
