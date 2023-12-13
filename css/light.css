@@ -15,8 +15,7 @@ body {
   color: var(--darkest);
   margin: 0;
   font-size: 20px;
-  font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 p.center {
@@ -50,9 +49,8 @@ h3 {
 a.link {
   color: var(--dark);
   text-decoration: underline var(--light);
-  font-size: 22px;
-  font-weight: 700;
   transition-duration: var(--fast);
+  font-weight: 600;
 }
 
 a.link:visited {
@@ -76,6 +74,7 @@ ul {
   top: 0;
   width: 100%;
   margin: auto;
+  font-weight: 600;
   z-index: 1;
 }
 
@@ -97,13 +96,13 @@ li a:hover:not(.active) {
   color: var(--lightest);
   transition-timing-function: ease-in-out;
   transition-duration: var(--fast);
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 .active {
   background-color: var(--light);
   color: var(--lightest);
-  transform: scale(105%);
+  /* transform: scale(105%); */
   text-shadow: 2px 2px var(--darkest);
 }
 
