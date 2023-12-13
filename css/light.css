@@ -17,29 +17,6 @@ body {
   line-height: 1.5;
 }
 
-/* SCROLLBAR */
-
-/* width */
-::-webkit-scrollbar {
-  width: 16px;
-}
-
-/* track */
-::-webkit-scrollbar-track {
-  background: var(--light); 
-}
- 
-/* handle */
-::-webkit-scrollbar-thumb {
-  background: var(--dark);
-}
-
-/* handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--dark);
-  border: 2px solid var(--darkest);
-}
-
 /* HEADERS AND ETC */
 
 hr {
@@ -125,6 +102,29 @@ li a:hover:not(.active) {
   text-shadow: 2px 2px var(--darkest);
 }
 
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: var(--light); 
+}
+ 
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: var(--dark);
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark);
+  border: 2px solid var(--darkest);
+}
+
 /* INLINE IMAGES */
 
 img {
@@ -153,8 +153,9 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  box-shadow: 6px 6px 2px var(--dark);
+  max-width: 100%;
+  box-shadow: 6px 6px var(--dark);
+  border: 2px dashed red;
 }
 
 /* SCREENSHOTS AND IMAGES */
@@ -163,8 +164,9 @@ img {
   position: relative;
   margin: 16px auto 16px auto;
   text-align: center;
+  max-width: 100%;
   width: 640px;
-  /* border: 2px solid blue; */
+  border: 2px dashed blue;
 }
 
 .top-left-text {
@@ -240,11 +242,19 @@ div.desc {
     margin: 12px 0 12px 0;
     z-index: 1;
   }
+
+  .top-left-text, .top-right-text {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .responsive {
     width: 100%;
+  }
+
+  .top-left-text, .top-right-text {
+    font-size: 12px;
   }
 
   .clearfix:after {
