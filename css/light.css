@@ -5,8 +5,12 @@
   --dark: #306850;
   --light: #86c06c;
   --lightest: #e0f8cf;
-  --fast: .2s;
+  --fast: .1s;
+  --med: .2s;
   --slow: .3s;
+  --shadow: 4px 4px var(--dark);
+  --shadow-hover: 8px 8px 2px var(--dark);
+  --shadow-text: 2px 2px var(--dark);
 }
 
 body {
@@ -27,19 +31,20 @@ p.center {
 hr {
   margin: 0 12.5% 0 12.5%;
   border-top: 6px dotted var(--darkest);
-  border-bottom: none;
 }
 
 h1 {
-  color: var(--dark);
+  color: var(--light);
   text-align: center;
+  text-shadow: var(--shadow-text);
   margin: 2px 0 2px 0;
   font-size: 42px;
 }
 
 h3 {
-  color: var(--dark);
+  color: var(--light);
   text-align: center;
+  text-shadow: var(--shadow-text);
   margin: 2px 0 2px 0;
   font-size: 30px;
 }
@@ -47,9 +52,9 @@ h3 {
 /* LINKS */
 
 a.link {
-  color: var(--dark);
-  text-decoration: underline var(--light);
-  transition-duration: var(--fast);
+  color: var(--light);
+  text-decoration: underline var(--dark);
+  transition-duration: var(--med);
   font-weight: 600;
 }
 
@@ -59,9 +64,10 @@ a.link:visited {
 }
 
 a.link:hover {
-  color: var(--dark);
-  text-shadow: 1px 1px var(--darkest);
-  transition-duration: var(--fast);
+  color: var(--light);
+  text-decoration: underline var(--light);
+  text-shadow: var(--shadow-text);
+  transition-duration: var(--med);
 }
 
 /* NAVIGATION */
@@ -87,23 +93,26 @@ li a {
   display: block;
   color: var(--lightest);
   text-align: center;
+  text-shadow: var(--shadow-text);
   padding: 2px;
   text-decoration: none;
+  transition-duration: var(--med);
 }
 
 li a:hover:not(.active) {
-  background-color: var(--dark);
-  color: var(--lightest);
+  background-color: var(--lightest);
+  color: var(--light);
+  text-shadow: var(--shadow-text);
   transition-timing-function: ease-in-out;
-  transition-duration: var(--fast);
-  transform: scale(105%);
+  transition-duration: var(--med);
 }
 
 .active {
-  background-color: var(--light);
-  color: var(--lightest);
-  /* transform: scale(105%); */
-  text-shadow: 2px 2px var(--darkest);
+  background-color: var(--lightest);
+  color: var(--light);
+  transform: scale(105%);
+  text-shadow: var(--shadow-text);
+  border-bottom: 2px solid var(--darkest);
 }
 
 /* BUTTONS */
@@ -133,7 +142,7 @@ li a:hover:not(.active) {
 }
 
 .button-dark:hover {
-  box-shadow: 4px 4px var(--dark);
+  box-shadow: var(--shadow);
   transform: scale(110%);
   transition-duration: var(--fast);
 }
@@ -145,7 +154,7 @@ li a:hover:not(.active) {
 }
 
 .button-light:hover {
-  box-shadow: 4px 4px var(--dark);
+  box-shadow: var(--shadow);
   transform: scale(110%);
   transition-duration: var(--fast);
 }
@@ -183,7 +192,7 @@ img {
   width: 320px;
   margin: 8px 12px 8px 4px;
   float: left;
-  box-shadow: 4px 4px var(--dark);
+  box-shadow: var(--shadow);
 }
 
 .img-right {
@@ -205,6 +214,7 @@ img {
   margin: 16px auto 16px auto;
   text-align: center;
   max-width: 100%;
+  max-height: 80%;
   width: 640px;
   /* border: 2px dashed blue; */
 }
@@ -214,7 +224,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  box-shadow: 6px 6px var(--dark);
+  box-shadow: var(--shadow-hover);
   /* border: 2px dashed red; */
 }
 
@@ -226,7 +236,7 @@ img {
   padding: 4px;
   color: var(--darkest);
   background-color: var(--light);
-  box-shadow: 6px 6px var(--dark);
+  box-shadow: var(--shadow);
   font-size: 24px;
 }
 
@@ -238,7 +248,7 @@ img {
   padding: 4px;
   color: var(--darkest);
   background-color: var(--light);
-  box-shadow: 6px 6px var(--dark);
+  box-shadow: var(--shadow-hover);
   font-size: 24px;
 }
 
@@ -251,8 +261,7 @@ p {
 /* RESPONSIVE GALLERY */
 
 div.gallery {
-  box-shadow: 6px 6px 2px var(--dark);
-  text-shadow: 2px 2px var(--darkest);
+  box-shadow: var(--shadow-hover);
   margin: 12px 12px 12px 12px;
   transition-duration: var(--fast);
   /* border: 2px solid red; */
@@ -262,7 +271,7 @@ div.gallery:hover {
   transition-timing-function: ease-in-out;
   transition-duration: var(--slow);
   transform: scale(105%);
-  box-shadow: 8px 8px 2px var(--dark);
+  box-shadow: var(--shadow-hover);
 }
 
 div.gallery img {
@@ -273,8 +282,11 @@ div.gallery img {
 div.desc {
   padding: 4px;
   text-align: center;
+  text-wrap: pretty;
+  font-weight: 600;
   background-color: var(--darkest);
-  color: var(--lightest);
+  color: var(--light);
+  text-shadow: var(--shadow-text);
 }
 
 * {
