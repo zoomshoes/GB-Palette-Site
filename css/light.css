@@ -9,8 +9,8 @@
   --med: .2s;
   --slow: .3s;
   --shadow: 4px 4px var(--dark);
-  --shadow-hover: 8px 8px 2px var(--dark);
-  --shadow-text: 2px 2px var(--dark);
+  --shadow-hover: 8px 8px 1px var(--dark);
+  --shadow-text: 1.5px 1.5px var(--dark);
 }
 
 body {
@@ -50,6 +50,10 @@ h3 {
   font-size: 30px;
 }
 
+p {
+  margin: 8px 4px 8px 4px;
+}
+
 /* LINKS */
 
 a.link {
@@ -77,6 +81,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: var(--darkest);
+  border: 2px solid var(--dark);
   position: sticky;
   top: 0;
   width: 100%;
@@ -113,7 +118,6 @@ li a:hover:not(.active) {
   color: var(--light);
   transform: scale(105%);
   text-shadow: var(--shadow-text);
-  border-bottom: 2px solid var(--darkest);
 }
 
 /* BUTTONS */
@@ -158,6 +162,53 @@ li a:hover:not(.active) {
   box-shadow: var(--shadow);
   transform: scale(110%);
   transition-duration: var(--fast);
+}
+
+/* TABLES */
+
+table {
+  font-family: monospace;
+  font-size: 16px;
+  color: var(--darkest);
+  border-collapse: collapse;
+  border: 1px solid var(--dark);
+  width: 95%;
+  margin: 8px auto 8px auto;
+  cursor: default;
+}
+
+caption {
+  caption-side: top;
+  font-size: 20px;
+  color: var(--lightest);
+  background-color: var(--darkest);
+  text-shadow: var(--shadow-text);
+  width: auto;
+  padding: 4px 6px 4px 6px;
+}
+
+th {
+  background-color: var(--darkest);
+  color: var(--lightest);
+  text-shadow: var(--shadow-text);
+  border: 1px solid var(--dark);
+  /* font-family: "Nunito Sans"; */
+  text-align: left;
+  padding: 2px 6px 2px 6px;
+}
+
+td {
+  padding: 2px 6px 2px 6px;
+  border: 1px solid var(--dark);
+}
+
+tr:nth-child(odd) {
+  background-color: var(--light);
+}
+
+tr:hover {
+  background-color: var(--dark);
+  color: var(--lightest);
 }
 
 /* SCROLLBAR */
@@ -253,12 +304,6 @@ img {
   font-size: 24px;
 }
 
-/* CONTENT */
-
-p {
-  margin: 8px 4px 8px 4px;
-}
-
 /* RESPONSIVE GALLERY */
 
 div.gallery {
@@ -300,7 +345,7 @@ div.desc {
   width: 24.99999%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .responsive {
     width: 49%;
     margin: 12px 0 12px 0;
@@ -322,9 +367,17 @@ div.desc {
     top: 16px;
     font-size: 16px;
   }
+
+  th {
+    font-size: 14px;
+  }
+
+  tr {
+    font-size: 14px;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .responsive {
     width: 100%;
   }
@@ -338,6 +391,14 @@ div.desc {
   .top-right-text {
     right: 16px;
     top: 14px;
+    font-size: 12px;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+  tr {
     font-size: 12px;
   }
 
