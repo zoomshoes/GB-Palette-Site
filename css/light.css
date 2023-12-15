@@ -180,6 +180,7 @@ table {
 caption {
   caption-side: top;
   font-size: 20px;
+  font-weight: 600;
   color: var(--lightest);
   background-color: var(--darkest);
   text-shadow: var(--shadow-text);

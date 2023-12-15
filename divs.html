@@ -1,12 +1,23 @@
 <head>
     <link rel="stylesheet" href="css/light.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://kit.fontawesome.com/99b8887c8c.js" crossorigin="anonymous"></script>
 
-    <!-- SORTABLE TABLES SCRIPT -->
+<!-- FONT -->
+<script src="https://kit.fontawesome.com/99b8887c8c.js" crossorigin="anonymous"></script>
 
-    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+<!-- SORTABLE TABLES SCRIPT -->
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+
+<!-- PULL FROM CSV SCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- FETCH FROM JSON -->
+<script type="module" src="js/tabledata.js"></script>
+
 </head>
+
+<body onload="myFunc">
     
 <ul>
     <li><a href="index.html">Home</a></li>
@@ -25,126 +36,21 @@
 
 <div style="overflow-x: auto;">
 
-<table class="sortable">
+<p id="demo"></p>
 
-<caption>NBA Players</caption>
+<script>
+    const obj = { table: "data", limit: 10 };
+    let s = document.createElement("script");
+    s.src = "data/data.json?x=" + JSON.stringify(obj);
+    document.body.appendChild(s);
+    
+    function myFunc(myObj) {
+      let txt = "";
+      for (let x in myObj) {
+        txt += myObj[x].name + "<br>";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+</script>
 
-    <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Points</th>
-        <th>Rebounds</th>
-        <th>Assists</th>
-        <th>FGA</th>
-        <th>FGM</th>
-        <th>FG%</th>
-    </tr>
-
-    <tr>
-        <td>Kobe</td>
-        <td>Bryant</td>
-        <td>81</td>
-        <td>9</td>
-        <td>5</td>
-        <td>FGA</td>
-        <td>FGM</td>
-        <td>FG%</td>
-    </tr>
-
-    <tr>
-        <td>Tim</td>
-        <td>Hardaway</td>
-        <td>42</td>
-        <td>8</td>
-        <td>12</td>
-        <td>FGA</td>
-        <td>FGM</td>
-        <td>FG%</td>
-    </tr>
-
-    <tr>
-        <td>Dirk</td>
-        <td>Nowitzki</td>
-        <td>55</td>
-        <td>14</td>
-        <td>7</td>
-        <td>FGA</td>
-        <td>FGM</td>
-        <td>FG%</td>
-    </tr>
-
-    <tr>
-        <td>Stephen</td>
-        <td>Curry</td>
-        <td>52</td>
-        <td>6</td>
-        <td>11</td>
-        <td>FGA</td>
-        <td>FGM</td>
-        <td>FG%</td>
-    </tr>
-</table>
 </div>
-
-<div style="overflow-x: auto;">
-
-    <table class="sortable">
-    
-    <caption>More NBA Players</caption>
-    
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Points</th>
-            <th>Rebounds</th>
-            <th>Assists</th>
-            <th>FGA</th>
-            <th>FGM</th>
-            <th>FG%</th>
-        </tr>
-    
-        <tr>
-            <td>Kobe</td>
-            <td>Bryant</td>
-            <td>81</td>
-            <td>9</td>
-            <td>5</td>
-            <td>FGA</td>
-            <td>FGM</td>
-            <td>FG%</td>
-        </tr>
-    
-        <tr>
-            <td>Tim</td>
-            <td>Hardaway</td>
-            <td>42</td>
-            <td>8</td>
-            <td>12</td>
-            <td>FGA</td>
-            <td>FGM</td>
-            <td>FG%</td>
-        </tr>
-    
-        <tr>
-            <td>Dirk</td>
-            <td>Nowitzki</td>
-            <td>55</td>
-            <td>14</td>
-            <td>7</td>
-            <td>FGA</td>
-            <td>FGM</td>
-            <td>FG%</td>
-        </tr>
-    
-        <tr>
-            <td>Stephen</td>
-            <td>Curry</td>
-            <td>52</td>
-            <td>6</td>
-            <td>11</td>
-            <td>FGA</td>
-            <td>FGM</td>
-            <td>FG%</td>
-        </tr>
-    </table>
-    </div>

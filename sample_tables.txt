@@ -1,0 +1,60 @@
+
+    <table class="sortable">
+    
+    <caption>More NBA Players</caption>
+    
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+            <th>Rebounds</th>
+            <th>Assists</th>
+            <th>FGA</th>
+            <th>FGM</th>
+            <th>FG%</th>
+        </tr>
+    
+        <tr>
+            <td>Kobe</td>
+            <td>Bryant</td>
+            <td>81</td>
+            <td>9</td>
+            <td>5</td>
+            <td>FGA</td>
+            <td>FGM</td>
+            <td>FG%</td>
+        </tr>
+    
+        <tr>
+            <td>Tim</td>
+            <td>Hardaway</td>
+            <td>42</td>
+            <td>8</td>
+            <td>12</td>
+            <td>FGA</td>
+            <td>FGM</td>
+            <td>FG%</td>
+        </tr>
+    
+        <tr>
+            <td>Dirk</td>
+            <td>Nowitzki</td>
+            <td>55</td>
+            <td>14</td>
+            <td>7</td>
+            <td>FGA</td>
+            <td>FGM</td>
+            <td>FG%</td>
+        </tr>
+    
+        <tr>
+            <td>Stephen</td>
+            <td>Curry</td>
+            <td>52</td>
+            <td>6</td>
+            <td>11</td>
+            <td>FGA</td>
+            <td>FGM</td>
+            <td>FG%</td>
+        </tr>
+    </table>

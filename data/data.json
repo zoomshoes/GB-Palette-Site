@@ -1,0 +1,274 @@
+{
+"data": [
+{
+    "Name":"Giannis Antetokounmpo",
+    "PTS":737,
+    "REB":249,
+    "AST":115,
+    "FGM":276,
+    "FGA":443,
+    "FG%":0.623
+},
+{
+    "Name":"Luka Dončić",
+    "PTS":705,
+    "REB":181,
+    "AST":196,
+    "FGM":240,
+    "FGA":498,
+    "FG%":0.482
+},
+{
+    "Name":"Joel Embiid",
+    "PTS":675,
+    "REB":229,
+    "AST":127,
+    "FGM":224,
+    "FGA":428,
+    "FG%":0.523
+},
+{
+    "Name":"Nikola Jokić",
+    "PTS":653,
+    "REB":303,
+    "AST":226,
+    "FGM":256,
+    "FGA":476,
+    "FG%":0.538
+},
+{
+    "Name":"Shai Gilgeous-Alexander",
+    "PTS":639,
+    "REB":115,
+    "AST":131,
+    "FGM":236,
+    "FGA":429,
+    "FG%":0.55
+},
+{
+    "Name":"Kevin Durant",
+    "PTS":616,
+    "REB":129,
+    "AST":112,
+    "FGM":211,
+    "FGA":406,
+    "FG%":0.52
+},
+{
+    "Name":"Stephen Curry",
+    "PTS":612,
+    "REB":106,
+    "AST":92,
+    "FGM":187,
+    "FGA":400,
+    "FG%":0.468
+},
+{
+    "Name":"Jayson Tatum",
+    "PTS":602,
+    "REB":193,
+    "AST":93,
+    "FGM":209,
+    "FGA":426,
+    "FG%":0.491
+},
+{
+    "Name":"LeBron James",
+    "PTS":582,
+    "REB":173,
+    "AST":155,
+    "FGM":218,
+    "FGA":396,
+    "FG%":0.551
+},
+{
+    "Name":"Tyrese Maxey",
+    "PTS":575,
+    "REB":91,
+    "AST":149,
+    "FGM":197,
+    "FGA":428,
+    "FG%":0.46
+},
+{
+    "Name":"Anthony Davis",
+    "PTS":574,
+    "REB":300,
+    "AST":72,
+    "FGM":215,
+    "FGA":395,
+    "FG%":0.544
+},
+{
+    "Name":"Trae Young",
+    "PTS":571,
+    "REB":58,
+    "AST":227,
+    "FGM":175,
+    "FGA":420,
+    "FG%":0.417
+},
+{
+    "Name":"Jalen Brunson",
+    "PTS":565,
+    "REB":84,
+    "AST":132,
+    "FGM":200,
+    "FGA":432,
+    "FG%":0.463
+},
+{
+    "Name":"Damian Lillard",
+    "PTS":546,
+    "REB":100,
+    "AST":154,
+    "FGM":156,
+    "FGA":372,
+    "FG%":0.419
+},
+{
+    "Name":"Desmond Bane",
+    "PTS":545,
+    "REB":95,
+    "AST":116,
+    "FGM":200,
+    "FGA":426,
+    "FG%":0.469
+},
+{
+    "Name":"Kawhi Leonard",
+    "PTS":537,
+    "REB":133,
+    "AST":83,
+    "FGM":199,
+    "FGA":396,
+    "FG%":0.503
+},
+{
+    "Name":"Mikal Bridges",
+    "PTS":530,
+    "REB":135,
+    "AST":90,
+    "FGM":191,
+    "FGA":393,
+    "FG%":0.486
+},
+{
+    "Name":"Kyle Kuzma",
+    "PTS":529,
+    "REB":137,
+    "AST":102,
+    "FGM":208,
+    "FGA":436,
+    "FG%":0.477
+},
+{
+    "Name":"Cade Cunningham",
+    "PTS":528,
+    "REB":96,
+    "AST":175,
+    "FGM":195,
+    "FGA":464,
+    "FG%":0.42
+},
+{
+    "Name":"Tyrese Haliburton",
+    "PTS":521,
+    "REB":85,
+    "AST":240,
+    "FGM":182,
+    "FGA":350,
+    "FG%":0.52
+},
+{
+    "Name":"Paul George",
+    "PTS":520,
+    "REB":136,
+    "AST":93,
+    "FGM":179,
+    "FGA":402,
+    "FG%":0.445
+},
+{
+    "Name":"Brandon Ingram",
+    "PTS":520,
+    "REB":109,
+    "AST":116,
+    "FGM":199,
+    "FGA":402,
+    "FG%":0.495
+},
+{
+    "Name":"Donovan Mitchell",
+    "PTS":520,
+    "REB":109,
+    "AST":96,
+    "FGM":179,
+    "FGA":396,
+    "FG%":0.452
+},
+{
+    "Name":"Julius Randle",
+    "PTS":515,
+    "REB":224,
+    "AST":124,
+    "FGM":185,
+    "FGA":408,
+    "FG%":0.453
+},
+{
+    "Name":"DeMar DeRozan",
+    "PTS":512,
+    "REB":81,
+    "AST":122,
+    "FGM":177,
+    "FGA":405,
+    "FG%":0.437
+},
+{
+    "Name":"Pascal Siakam",
+    "PTS":508,
+    "REB":163,
+    "AST":120,
+    "FGM":194,
+    "FGA":385,
+    "FG%":0.504
+},
+{
+    "Name":"Jaren Jackson Jr.",
+    "PTS":502,
+    "REB":134,
+    "AST":41,
+    "FGM":172,
+    "FGA":383,
+    "FG%":0.449
+},
+{
+    "Name":"De'Aaron Fox",
+    "PTS":501,
+    "REB":76,
+    "AST":108,
+    "FGM":176,
+    "FGA":375,
+    "FG%":0.469
+},
+{
+    "Name":"Scottie Barnes",
+    "PTS":482,
+    "REB":218,
+    "AST":135,
+    "FGM":181,
+    "FGA":375,
+    "FG%":0.483
+},
+{
+    "Name":"Paolo Banchero",
+    "PTS":476,
+    "REB":157,
+    "AST":104,
+    "FGM":175,
+    "FGA":357,
+    "FG%":0.49
+}
+]
+}
