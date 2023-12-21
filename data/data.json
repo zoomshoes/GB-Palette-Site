@@ -1,5 +1,5 @@
 {
-"data": [
+"stats": [
 {
     "Name":"Giannis Antetokounmpo",
     "PTS":737,
@@ -7,7 +7,7 @@
     "AST":115,
     "FGM":276,
     "FGA":443,
-    "FG%":0.623
+    "FGP":0.623
 },
 {
     "Name":"Luka Dončić",
@@ -16,7 +16,7 @@
     "AST":196,
     "FGM":240,
     "FGA":498,
-    "FG%":0.482
+    "FGP":0.482
 },
 {
     "Name":"Joel Embiid",
@@ -25,7 +25,7 @@
     "AST":127,
     "FGM":224,
     "FGA":428,
-    "FG%":0.523
+    "FGP":0.523
 },
 {
     "Name":"Nikola Jokić",
@@ -34,7 +34,7 @@
     "AST":226,
     "FGM":256,
     "FGA":476,
-    "FG%":0.538
+    "FGP":0.538
 },
 {
     "Name":"Shai Gilgeous-Alexander",
@@ -43,7 +43,7 @@
     "AST":131,
     "FGM":236,
     "FGA":429,
-    "FG%":0.55
+    "FGP":0.55
 },
 {
     "Name":"Kevin Durant",
@@ -52,7 +52,7 @@
     "AST":112,
     "FGM":211,
     "FGA":406,
-    "FG%":0.52
+    "FGP":0.52
 },
 {
     "Name":"Stephen Curry",
@@ -61,7 +61,7 @@
     "AST":92,
     "FGM":187,
     "FGA":400,
-    "FG%":0.468
+    "FGP":0.468
 },
 {
     "Name":"Jayson Tatum",
@@ -70,7 +70,7 @@
     "AST":93,
     "FGM":209,
     "FGA":426,
-    "FG%":0.491
+    "FGP":0.491
 },
 {
     "Name":"LeBron James",
@@ -79,7 +79,7 @@
     "AST":155,
     "FGM":218,
     "FGA":396,
-    "FG%":0.551
+    "FGP":0.551
 },
 {
     "Name":"Tyrese Maxey",
@@ -88,7 +88,7 @@
     "AST":149,
     "FGM":197,
     "FGA":428,
-    "FG%":0.46
+    "FGP":0.46
 },
 {
     "Name":"Anthony Davis",
@@ -97,7 +97,7 @@
     "AST":72,
     "FGM":215,
     "FGA":395,
-    "FG%":0.544
+    "FGP":0.544
 },
 {
     "Name":"Trae Young",
@@ -106,7 +106,7 @@
     "AST":227,
     "FGM":175,
     "FGA":420,
-    "FG%":0.417
+    "FGP":0.417
 },
 {
     "Name":"Jalen Brunson",
@@ -115,7 +115,7 @@
     "AST":132,
     "FGM":200,
     "FGA":432,
-    "FG%":0.463
+    "FGP":0.463
 },
 {
     "Name":"Damian Lillard",
@@ -124,7 +124,7 @@
     "AST":154,
     "FGM":156,
     "FGA":372,
-    "FG%":0.419
+    "FGP":0.419
 },
 {
     "Name":"Desmond Bane",
@@ -133,7 +133,7 @@
     "AST":116,
     "FGM":200,
     "FGA":426,
-    "FG%":0.469
+    "FGP":0.469
 },
 {
     "Name":"Kawhi Leonard",
@@ -142,7 +142,7 @@
     "AST":83,
     "FGM":199,
     "FGA":396,
-    "FG%":0.503
+    "FGP":0.503
 },
 {
     "Name":"Mikal Bridges",
@@ -151,7 +151,7 @@
     "AST":90,
     "FGM":191,
     "FGA":393,
-    "FG%":0.486
+    "FGP":0.486
 },
 {
     "Name":"Kyle Kuzma",
@@ -160,7 +160,7 @@
     "AST":102,
     "FGM":208,
     "FGA":436,
-    "FG%":0.477
+    "FGP":0.477
 },
 {
     "Name":"Cade Cunningham",
@@ -169,7 +169,7 @@
     "AST":175,
     "FGM":195,
     "FGA":464,
-    "FG%":0.42
+    "FGP":0.42
 },
 {
     "Name":"Tyrese Haliburton",
@@ -178,7 +178,7 @@
     "AST":240,
     "FGM":182,
     "FGA":350,
-    "FG%":0.52
+    "FGP":0.52
 },
 {
     "Name":"Paul George",
@@ -187,7 +187,7 @@
     "AST":93,
     "FGM":179,
     "FGA":402,
-    "FG%":0.445
+    "FGP":0.445
 },
 {
     "Name":"Brandon Ingram",
@@ -196,7 +196,7 @@
     "AST":116,
     "FGM":199,
     "FGA":402,
-    "FG%":0.495
+    "FGP":0.495
 },
 {
     "Name":"Donovan Mitchell",
@@ -205,7 +205,7 @@
     "AST":96,
     "FGM":179,
     "FGA":396,
-    "FG%":0.452
+    "FGP":0.452
 },
 {
     "Name":"Julius Randle",
@@ -214,7 +214,7 @@
     "AST":124,
     "FGM":185,
     "FGA":408,
-    "FG%":0.453
+    "FGP":0.453
 },
 {
     "Name":"DeMar DeRozan",
@@ -223,7 +223,7 @@
     "AST":122,
     "FGM":177,
     "FGA":405,
-    "FG%":0.437
+    "FGP":0.437
 },
 {
     "Name":"Pascal Siakam",
@@ -232,7 +232,7 @@
     "AST":120,
     "FGM":194,
     "FGA":385,
-    "FG%":0.504
+    "FGP":0.504
 },
 {
     "Name":"Jaren Jackson Jr.",
@@ -241,7 +241,7 @@
     "AST":41,
     "FGM":172,
     "FGA":383,
-    "FG%":0.449
+    "FGP":0.449
 },
 {
     "Name":"De'Aaron Fox",
@@ -250,7 +250,7 @@
     "AST":108,
     "FGM":176,
     "FGA":375,
-    "FG%":0.469
+    "FGP":0.469
 },
 {
     "Name":"Scottie Barnes",
@@ -259,7 +259,7 @@
     "AST":135,
     "FGM":181,
     "FGA":375,
-    "FG%":0.483
+    "FGP":0.483
 },
 {
     "Name":"Paolo Banchero",
@@ -268,7 +268,7 @@
     "AST":104,
     "FGM":175,
     "FGA":357,
-    "FG%":0.49
+    "FGP":0.49
 }
 ]
 }

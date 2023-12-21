@@ -199,6 +199,7 @@ th {
 }
 
 td {
+  max-width: 40vw;
   padding: 2px 6px 2px 6px;
   border: 1px solid var(--dark);
 }
@@ -227,7 +228,6 @@ tr:hover {
 /* handle */
 ::-webkit-scrollbar-thumb {
   background: var(--dark);
-  border-radius: 6px;
 }
 
 /* handle on hover */

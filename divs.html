@@ -3,10 +3,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- FONT -->
-<script src="https://kit.fontawesome.com/99b8887c8c.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/99b8887c8c.js"></script>
 
 <!-- SORTABLE TABLES SCRIPT -->
-<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+<script src="js/sorttable.js"></script>
 
 <!-- PULL FROM CSV SCRIPT -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -34,23 +34,23 @@
 
 <p class="center">Hopefully, I'll be able to pull data from other sources into tables on this page...</p>
 
+<p class="center">Update: WE OUT HERE</p>
+
 <div style="overflow-x: auto;">
 
-<p id="demo"></p>
-
-<script>
-    const obj = { table: "data", limit: 10 };
-    let s = document.createElement("script");
-    s.src = "data/data.json?x=" + JSON.stringify(obj);
-    document.body.appendChild(s);
-    
-    function myFunc(myObj) {
-      let txt = "";
-      for (let x in myObj) {
-        txt += myObj[x].name + "<br>";
-      }
-      document.getElementById("demo").innerHTML = txt;
-    }
-</script>
+<table id="statdata" class="sortable">
+  <thead>
+    <th>Name</th>
+    <th>PTS</th>
+    <th>REB</th>
+    <th>AST</th>
+    <th>FGM</th>
+    <th>FGA</th>
+    <th>FG%</th>
+    <th>TS%</th>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
 
 </div>
