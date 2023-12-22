@@ -1,24 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('data/data.json')
-        .then(response => response.json())
-        .then(data => {
+import { aggregatePlayers, fetchData } from "./aggregatePlayerData.js";
+
+document.addEventListener('DOMContentLoaded', async function() {
+        const jsonData = await fetchData() // Fetch JSON data
+        const statData = await aggregatePlayers(jsonData, 2013) // Feed data to get player stats for specified season 
             const tableBody = document.querySelector("#statdata tbody");
-            data.stats.forEach(f => {
+            statData.forEach(f => { // Iterate through stats of players
                 const tableRow = document.createElement("tr");
-
+                const name = f.name
+                const statsObj = f.aggregatedStats
+                // Stats defined in `calcStats.js
                 tableRow.innerHTML = `
-                    <td>${f.Name}</td>
-                    <td>${f.PTS}</td>
-                    <td>${f.REB}</td>
-                    <td>${f.AST}</td>
-                    <td>${f.FGM}</td>
-                    <td>${f.FGA}</td>
-                    <td>${(f.FGP * 100).toFixed(1)}</td>
-                    <td>${(f.TSP * 100).toFixed(1)}</td>
+                    <td>${name}</td>
+                    <td>${statsObj.pts}</td>
+                    <td>${statsObj.avgTrb}</td>
+                    <td>${statsObj.avgAst}</td>
+                    <td>${statsObj.fg}</td>
+                    <td>${statsObj.fga}</td>
+                    <td>${statsObj.fgPercent}</td>
+                    <td>${statsObj.tsp}</td>
                 `;
-
                 tableBody.appendChild(tableRow);
             });
-        })
-        .catch(error => console.error('Error:', error));
-});
+})

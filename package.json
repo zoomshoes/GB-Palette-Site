@@ -1,0 +1,15 @@
+{
+  "name": "gb-palette-backend",
+  "version": "1.0.0",
+  "description": "backend for GB Palette",
+  "main": "/js/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zoom & fenix",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
