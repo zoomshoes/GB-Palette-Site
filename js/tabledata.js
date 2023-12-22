@@ -1,35 +1,24 @@
-$(function() {
-    $.getJSON('data/data.json', function(data) {
-        $.each(data.stats, function(i, f) {
-        var tableRow = "<tr>" + 
-            "<td>" + f.Name + "</td>" +
-            "<td>" + f.PTS + "</td>" +
-            "<td>" + f.REB + "</td>" +
-            "<td>" + f.AST + "</td>" +
-            "<td>" + f.FGM + "</td>" +
-            "<td>" + f.FGA + "</td>" +
-            "<td>" + (f.FGP*100).toFixed(1) + "</td>" +
-            "<td>" + f.TS + "</td>" +
-            "</tr>";
-        $(tableRow).appendTo("#statdata tbody");
-        });
-    });
-});
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('data/data.json')
+        .then(response => response.json())
+        .then(data => {
+            const tableBody = document.querySelector("#statdata tbody");
+            data.stats.forEach(f => {
+                const tableRow = document.createElement("tr");
 
-// $(function() {
-//     $.getJSON('data/export.json', function(data) {
-//         $.each(data.players, function(i, f) {
-//         var tableRow = "<tr>" + 
-//             "<td>" + f.ast + "</td>" +
-//             "<td>" + f.astp + "</td>" +
-//             "<td>" + f.drb + "</td>" +
-//             "<td>" + f.dws + "</td>" +
-//             "<td>" + f.fg + "</td>" +
-//             "<td>" + f.fga + "</td>" +
-//             // "<td>" + (f.FGP*100).toFixed(1) + "</td>" +
-//             "<td>" + 'a' + "</td>" +
-//             "</tr>";
-//         $(tableRow).appendTo("#statdata tbody");
-//         });
-//     });
-// });
+                tableRow.innerHTML = `
+                    <td>${f.Name}</td>
+                    <td>${f.PTS}</td>
+                    <td>${f.REB}</td>
+                    <td>${f.AST}</td>
+                    <td>${f.FGM}</td>
+                    <td>${f.FGA}</td>
+                    <td>${(f.FGP * 100).toFixed(1)}</td>
+                    <td>${(f.TSP * 100).toFixed(1)}</td>
+                `;
+
+                tableBody.appendChild(tableRow);
+            });
+        })
+        .catch(error => console.error('Error:', error));
+});
