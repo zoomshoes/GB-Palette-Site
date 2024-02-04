@@ -10,11 +10,11 @@
   --slow: .3s;
   --shadow: 4px 4px var(--dark);
   --shadow-hover: 8px 8px 1px var(--dark);
-  --shadow-text: 1.5px 1.5px var(--dark);
+  --shadow-text: 2px 2px var(--dark);
 }
 
 body {
-  font-family: "Nunito Sans";
+  font-family: "Nunito Sans", serif;
   background-color: var(--lightest);
   color: var(--darkest);
   margin: 0;
@@ -92,7 +92,7 @@ ul {
 
 li {
   margin: 0;
-  float: center;
+  float: none;
 }
 
 li a {
@@ -250,7 +250,7 @@ img {
 
 .img-right {
   width: 320px;
-  margin: 8px 12px 4px 0px;
+  margin: 8px 12px 4px 0;
   float: right;
 }
 
@@ -329,7 +329,7 @@ div.gallery img {
 div.desc {
   padding: 4px;
   text-align: center;
-  text-wrap: pretty;
+  text-wrap: normal;
   font-weight: 600;
   background-color: var(--darkest);
   color: var(--light);

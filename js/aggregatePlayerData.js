@@ -56,10 +56,8 @@ export async function fetchStats(playerObj, currentSzn) {
 		return null
     }
     const hasPlayed = (statObj) => {
-		if (statObj.gp === 0 && statObj.per === 0) {
-			return false
-		}
-		return true
+		return !(statObj.gp === 0 && statObj.per === 0);
+
     }
 
     /**
