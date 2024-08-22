@@ -1,0 +1,292 @@
+<head>
+    <link rel="stylesheet" href="css\light.css">
+    <script src="https://unpkg.com/htmx.org@2.0.2" integrity="sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        input[type=text], select, textarea {
+            background-color: var(--dark);
+            color: var(--lightest);
+            font-family: "Nunito Sans", serif;
+            font-size: 16px;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--lightest);
+            border-radius: 2px;
+            /* resize: vertical; */
+        }
+        
+        label {
+            color: var(--darkest);
+            font-size: 20px;
+            padding: 0 12px 12px 0;
+            display: inline-block;
+        }
+        
+        input[type=submit] {
+            background-color: var(--lightest);
+            font-family: "Nunito Sans", serif;
+            font-size: 20px;
+            color: var(--darkest);
+            border: 2px solid var(--light);
+            padding: 12px 20px;
+            cursor: pointer;
+            float: right;
+        }
+        
+        input[type=submit]:hover {
+            background-color: var(--darkest);
+            color: var(--light);
+            border: 2px solid var(--light);
+            font-style: italic;
+        }
+        
+        .container {
+            width: 90%;
+            border: 4px solid var(--dark);
+            background-color: var(--lightest);
+            padding: 20px;
+        }
+        
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin: 6px 0 6px 0;
+        }
+        
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .col-25, .col-75, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/99b8887c8c.js" crossorigin="anonymous"></script>
+
+    <!-- <i class="fas fa-arrow-circle-up"></i>
+    <i class="fas fa-arrow-circle-up"></i>
+    <i class="fas fa-arrow-circle-down"></i>
+    <i class="fas fa-arrow-circle-down"></i>
+    <i class="fas fa-arrow-circle-left"></i>
+    <i class="fas fa-arrow-circle-right"></i>
+    <i class="fas fa-arrow-circle-left"></i>
+    <i class="fas fa-arrow-circle-right"></i>
+    <i class="fa fa-bold"></i>
+    <i class="fa fa-font"></i>SELECT START -->
+
+    <!-- dark mode toggle script -->
+    <!-- <script>
+        function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (theme.getAttribute('href') == 'main.css') {
+                theme.setAttribute('href', 'dark.css');
+            } else {
+                theme.setAttribute('href', 'main.css');
+            }
+        }
+    </script> -->
+    
+</head>
+    
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gbcamera.html">GB Camera</a></li>
+    <li><a href="screenshots.html">Screenshots</a></li>
+    <li><a href="buttons.html">Buttons</a></li>
+    <li><a href="divs.html">Divs and Containers</a></li>
+    <li><a class="active" href="form.html">GB Studio DB Form</a></li>
+</ul>
+
+<h1>GB Studio Project Submission Form</h1>
+
+<hr>
+
+<div class="container">
+    <form action="">
+
+<h3>About Your Game</h3>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="title">Game Title</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="title" name="gametitle">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="devname">Developer Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="devname" name="developername">
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="devstudio">Developer Studio</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="devstudio" name="developerstudio">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="discordname">Developer GB Studio Discord Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="discordname" name="devdiscordname">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="genre">Genre</label>
+        </div>
+        <div class="col-75">
+          <select id="genre" name="genre">
+            <option value="action">Action</option>
+            <option value="action-adventure">Action-Adventure</option>
+            <option value="adventure">Adventure</option>
+            <option value="battle-royale">Battle Royale</option>
+            <option value="beat-em-up">Beat 'Em Up</option>
+            <option value="bullet-hell">Bullet Hell</option>
+            <option value="card-game">Card Game</option>
+            <option value="collectible-card-game">Collectible Card Game (CCG)</option>
+            <option value="construction-management-simulation">Construction and Management Simulation</option>
+            <option value="dance-rhythm">Dance/Rhythm</option>
+            <option value="dungeon-crawler">Dungeon Crawler</option>
+            <option value="fighting">Fighting</option>
+            <option value="first-person-shooter">First-Person Shooter (FPS)</option>
+            <option value="hack-and-slash">Hack and Slash</option>
+            <option value="idle-game">Idle Game</option>
+            <option value="interactive-fiction">Interactive Fiction</option>
+            <option value="light-gun-shooter">Light Gun Shooter</option>
+            <option value="life-simulation">Life Simulation</option>
+            <option value="massively-multiplayer-online">Massively Multiplayer Online (MMO)</option>
+            <option value="metroidvania">Metroidvania</option>
+            <option value="music-game">Music Game</option>
+            <option value="platformer">Platformer</option>
+            <option value="puzzle">Puzzle</option>
+            <option value="racing">Racing</option>
+            <option value="real-time-strategy">Real-Time Strategy (RTS)</option>
+            <option value="roguelike">Roguelike</option>
+            <option value="role-playing-game">Role-Playing Game (RPG)</option>
+            <option value="sandbox">Sandbox</option>
+            <option value="shoot-em-up">Shoot 'Em Up</option>
+            <option value="simulation">Simulation</option>
+            <option value="sports">Sports</option>
+            <option value="stealth">Stealth</option>
+            <option value="strategy">Strategy</option>
+            <option value="survival">Survival</option>
+            <option value="survival-horror">Survival Horror</option>
+            <option value="third-person-shooter">Third-Person Shooter</option>
+            <option value="tower-defense">Tower Defense</option>
+            <option value="turn-based-strategy">Turn-Based Strategy (TBS)</option>
+            <option value="visual-novel">Visual Novel</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="projdesc">Give a brief description of your project.</label>
+        </div>
+        <div class="col-75">
+          <textarea id="projdesc" name="projectdescription" style="height:200px"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="entryyear">Year of entry</label>
+        </div>
+        <div class="col-75">
+          <select id="entryyear" name="entryyear">
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+          </select>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="completion">How far along is your project?</label>
+      </div>
+      <div class="col-75">
+        <select id="completion" name="projectcompletion">
+          <option value="kickstarter">Kickstarter</option>
+          <option value="WIP">WIP</option>
+          <option value="Demo">Demo</option>
+          <option value="Full Release">Full Release</option>
+          <option value="Shelved">Shelved</option>
+        </select>
+      </div>
+    </div>
+
+<h3>Links</h3>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="youtubelink">YouTube Channel Link</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="youtubelink" name="youtubelink">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="itchiolink">Itch.io Link</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="itchiolink" name="itchiolink">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="steamlink">Steam Link</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="steamlink" name="steamlink">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="misclink">Other Link (Github, etc)</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="misclink" name="misclink">
+        </div>
+      </div>
+    
+    <br>
+
+    <div class="row">
+      <input type="submit" value="I'm ready to submit!">
+    </div>
+    </form>
+  </div>
